@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tổng 20 số đầu tiên trong dãy fibonacc</title>
+</head>
+<body>
+    <script>
+
+
+         function display() {
+             var f0 = Number(prompt("Nhập số thứ 1"));
+             var f1 = Number(prompt("Nhập số thứ 2"));
+             var arr = new Array();
+             var fibo = "";
+             var sum=0;
+             for (i=2;i<20;i++) {
+                 arr[0] = f0;
+                 arr[1] = f1;
+                 arr[i] = arr[i - 1] + arr[i - 2];
+                 fibo = fibo.concat(arr[i]+"<br>");
+                 sum+=arr[i];
+             }
+             document.write("Dãy fibonaci là "+"<br>"+f0+"<br>"+f1+"<br>"+fibo)
+         }
+         display();
+    </script>
+</body>
+</html>

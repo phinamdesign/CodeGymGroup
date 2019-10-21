@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$/BMI" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/calculatorMulti" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/employee" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/events" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/good-fast-cheap" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/mouseClick" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/timeSwitchCase" vcs="Git" />
+  </component>
+</project>

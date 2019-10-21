@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Khởi tạo mảng số nguyên gồm 10 phần tử, tìm số lớn nhất trong mảng và vị trí của nó</title>
+</head>
+<body>
+<script>
+    var arr = [];
+    function check(arr,x) {
+        for (i=0;i<arr.length;i++){
+            if (arr[i]==x){
+                return false;
+            }
+        }
+        return true;
+    }
+
+    for (var i = 0; i<5; i++){
+        x= Number(prompt("Nhập số vào mảng"));
+        while (check(arr,x)==false){
+            x= Number(prompt("Nhập lại"));
+        }
+        arr.push(x);
+    }
+    var　max = arr[0];
+    var ave;
+    var sum =0;
+    for (var j = 0;j<arr.length;j++){
+        if (arr[j]>max){
+            max= arr[j];
+        }
+        sum+=arr[j];
+       ave=sum/arr.length;
+    }
+    alert("Số lớn nhất là "+max+" trung bình cộng của mảng là  "+ave);
+</script>
+</body>
+</html>

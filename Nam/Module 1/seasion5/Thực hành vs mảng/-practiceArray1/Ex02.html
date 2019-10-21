@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        var arr = [];
+        var x, y;
+
+        for (i=0;i<5;i++){
+            x = prompt("nhập số :");
+            arr.push(x);
+        }
+        var first = 0;
+        var last =arr.length-1;
+
+        while (first<last){
+            y= arr[first];
+            arr[first]=arr[last];
+            arr[last]=y;
+            first++;
+            last--;
+        }
+        alert(arr);
+    </script>
+</body>
+</html>

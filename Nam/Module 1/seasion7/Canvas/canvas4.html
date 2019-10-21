@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hiệu ứng đổ màu</title>
+</head>
+<body>
+<canvas id="canvas" width="400" height="200px"></canvas>
+<script>
+    var c = document.getElementById("canvas");
+    var ctx = c.getContext("2d");
+    //Create gradient
+    var grd = ctx.createLinearGradient(0,0,200,0);// tỉ lệ màu
+    grd.addColorStop(0,"red"); //chuyển từ đỏ
+    grd.addColorStop(1,"blue");// sang xanh
+
+    // Fill with gradient
+    ctx.fillStyle = grd;
+    ctx.fillRect(10,10,150,80);//tọa độ, kích thước của khối
+
+</script>
+</body>
+</html>

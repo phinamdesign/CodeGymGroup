@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Game mèo đuổi chuột</title>
+</head>
+<body>
+    <script>
+        function Mouse (name,weight,speed){
+            this.name = name;
+            this.weight = weight;
+            this.speed = speed;
+            this.status = true;
+            this.greeting = function () {
+               alert(" Chít chít !!");
+            };
+            this.getWeight = function () {
+                return this.weight;
+            };
+            this.setWeight = function (newWeight) {
+                this.weight = newWeight;
+            };
+            this.setDead = function (newWeight) {
+                this.status = false;
+            };
+            this.geSpeed = function () {
+                return this.speed;
+            }
+        }
+        let MouseJery = new Mouse("jery",10,5);
+
+        function Cat (name,weight,speed){
+            this.name = name;
+            this.weight = weight;
+            this.speed = speed;
+            this.status = true;
+            this.greeting = function () {
+                alert(" Tên của meaf là ")+this.name;
+            };
+            this.getWeight = function () {
+                return this.weight;
+            };
+            this.setWeight = function (newWeight) {
+                this.weight = newWeight;
+            };
+            this.setDead = function (newWeight) {
+                this.status = false;
+            };
+        }
+        let CatTom = new Cat("tom",20,5);
+    </script>
+</body>
+</html>

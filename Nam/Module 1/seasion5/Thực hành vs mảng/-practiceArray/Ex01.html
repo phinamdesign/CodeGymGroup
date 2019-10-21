@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Khởi tạo mảng số nguyên gồm 10 phần tử</title>
+</head>
+<body>
+<script>
+    var j ;
+    var result = [];
+    var arr = [];
+    for (var i = 0; i<10; i++){
+        arr[i] = prompt("Nhập giá trị cho mảng");
+        if (arr[i]>=10) {
+            result.push(arr[i]);
+        }
+    }
+    document.write("Trong 10 giá trị nhập vào thì có "+result.length+"  giá trị lớn hơn 10"+"<br>"+"Các giá trị lớn hơn 10 : "+result);
+</script>
+</body>
+</html>

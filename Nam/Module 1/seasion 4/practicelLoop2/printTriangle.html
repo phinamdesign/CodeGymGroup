@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vẽ tam giác</title>
+</head>
+<body>
+<form action="">
+    <input type="text" value="" id="num"><br><br>
+    <button type="button" onclick="display1()">Tam giác 1</button>
+    <button type="button" onclick="display2()">Tam giác 2</button>
+    <button type="button" onclick="display3()">Tam giác 3</button>
+    <button type="button" onclick="display4()">Tam giác 4</button>
+    <button type="button" onclick="display5()">Hình chữ nhật</button>
+</form>
+<div id="result"></div>
+<script>
+    function display1() {
+        var n = Number(document.getElementById("num").value);
+        for (i=0;i<n;i++){
+            var str="";
+            for (let j=i+1;j<n;j++){
+                str += "*"+ "&nbsp";
+            }
+           document.write("*"+"&nbsp"+str+"<br>");
+        }
+    }
+
+    function display2() {
+        let str="";
+        let n = Number(document.getElementById("num").value);
+        for (let i=n;i>=1;i--){
+            let j = 0;
+            while (j<n-1){
+                j++;
+            }
+            str =str+"*"+"&nbsp";
+            document.write(str+"<br>");
+        }
+    }
+
+    function display3() {
+        let str="";
+        let n = Number(document.getElementById("num").value);
+        for (let i=0;i<=n;i++){
+            let j = 0;
+            let space = "";
+            while (j<n-i){
+                space+="&nbsp;&nbsp;";
+                j++;
+            }
+            str ="*"+str;
+            document.write(space+str+"<br>");
+        }
+    }
+
+    function display4() {
+        let n = Number(document.getElementById("num").value);
+        for (let i = n; i >=0; i--) {
+            for (let j = n; j >=0 ; j--) {
+                if (j < i) {
+                    document.write("*");
+                } else {
+                    document.write("&nbsp;&nbsp;");
+                }
+            }
+            document.write("<br>");
+        }
+    }
+
+    function display5() {
+        let n = Number(prompt("Nhập n"));
+        let m = Number(prompt("Nhập m"));
+        for (let i = 1; i <= n; i++) {
+            let str = "";
+            for (let j = 1; j <= m; j++) {
+                    if (i==1 || i==n ||j==1 || j==m){
+                        document.write("*"+"&nbsp;");
+                    }else {
+                        document.write("&nbsp;&nbsp;&nbsp;")
+                    }
+            }
+            document.write("<br>");
+        }
+    }
+</script>
+</body>
+</html>

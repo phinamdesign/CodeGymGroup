@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tìm 30 số đầu  tiên chia hết cho 7</title>
+</head>
+<body>
+<script>
+    function check(n) {
+        if (n%7==0){
+            return true;
+        }
+        return false;
+    }
+
+    function display() {
+        var num = Number(prompt("Nhập số lượng snt cần lấy"));
+        let i=1;
+        let count = 0;
+        var sum=0;
+        while (count<num){
+            if (check(i)){
+                sum+=i;
+                count++;
+                document.write(i+"<br>");
+            }
+            i++;
+        }
+        document.write("Tổng của "+num+" số chia hết cho 7 là "+sum);
+    }
+    display();
+</script>
+</body>
+</html>

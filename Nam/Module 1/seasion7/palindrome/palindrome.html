@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuỗi palindrome</title>
+</head>
+<body>
+<script>
+
+    function reverseString(a) {
+        return (a === " ") ? " " : reverseString(a.substr(1)) + a.charAt(0) ;
+    }
+    reverseString("hello")
+</script>
+</body>
+</html>

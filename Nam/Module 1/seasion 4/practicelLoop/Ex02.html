@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nhập nhiệt độ</title>
+</head>
+<body>
+<script>
+    let t = Number(prompt("Nhập nhiệt độ"));
+    do {
+        if (t> 100){
+            t = Number(prompt("Nhiệt độ cao quá 100, vui lòng nhập lại !"));
+        }else {
+            t = Number(prompt("Nhiệt thấp, vui lòng nhập lại !"));
+        }
+    }while (t>100 || t<20);
+</script>
+</body>
+</html>

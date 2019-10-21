@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vẽ tam giác</title>
+</head>
+<body>
+<form action="">
+    <input type="text" value="" id="num"><br><br>
+    <button type="button" onclick="display1()">Tam giác 1</button>
+    <button type="button" onclick="display2()">Tam giác 2</button>
+    <button type="button" onclick="display3()">Tam giác 3</button>
+    <button type="button" onclick="display4()">Tam giác 4</button>
+    <button type="button" onclick="display5()">Hình chữ nhật</button>
+</form>
+<div id="result"></div>
+<script>
+    function display1() {
+        var n = Number(document.getElementById("num").value);
+        for (i=0;i<n;i++){
+            var str="";
+            for (let j=i+1;j<n;j++){
+                str += "*"+ "&nbsp";
+            }
+            document.write("*"+"&nbsp"+str+"<br>");
+        }
+    }
+
+    function display2() {
+        let str="";
+        let n = Number(document.getElementById("num").value);
+        for (let i=0;i<n;i++){
+            let j = 0;
+            while (j<n-1){
+                j++;
+            }
+            str =str+"*"+"&nbsp";
+            document.write(str+"<br>");
+        }
+    }
+</script>
+</body>
+</html>
